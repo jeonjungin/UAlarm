@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_vertical|center_horizontal"
+    android:background="#009900"
+    tools:context="com.god.jungin.ualarmaws.MainActivity">
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/main_alarm_set_btn"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="#FFFFFF"
+            android:layout_margin="20dp"
+            android:text="set"
+            />
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:id="@+id/main_alarm_list_btn"
+
+            android:layout_margin="20dp"
+            android:background="#FFFFFF"
+            android:text="list"/>
+    </LinearLayout>
+    <Button
+        android:layout_width="370dp"
+        android:layout_height="100dp"
+        android:id="@+id/start"
+        android:text="start service"/>
+    <Button
+        android:layout_width="370dp"
+        android:layout_height="100dp"
+        android:id="@+id/stop"
+        android:text="stop service"/>
+
+
+
+
+
+
+</LinearLayout>

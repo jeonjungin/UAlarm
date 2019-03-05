@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorSet4"
+        android:orientation="vertical"
+
+        >
+        <ImageView
+            android:layout_width="110dp"
+            android:layout_height="30dp"
+            android:src="@drawable/ic_title"
+            android:layout_gravity="center"
+            android:layout_margin="5dp"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="340dp"
+        android:layout_height="35dp"
+        android:orientation="horizontal"
+        android:background="@drawable/addalarm_ripple"
+
+        android:layout_gravity="center"
+        android:layout_margin="15dp"
+        android:id="@+id/alarm_server_set">
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginLeft="10dp"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_alarmadd"/>
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="15dp"
+            android:textColor="#FFFFFF"
+            android:textSize="20dp"
+            android:text="알람을 추가하세요!"/>
+    </LinearLayout>
+    <android.support.v7.widget.ContentFrameLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <android.support.v4.widget.SwipeRefreshLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/alarm_server_refresh">
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/alarm_server_lv"
+            ></android.support.v7.widget.RecyclerView>
+        </android.support.v4.widget.SwipeRefreshLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="알람이 없습니다!"
+            android:textColor="#000000"
+            android:textSize="15dp"
+            android:layout_gravity="center"
+            android:id="@+id/alarm_server_empty"
+            android:visibility="invisible"/>
+
+
+    </android.support.v7.widget.ContentFrameLayout>
+</LinearLayout>

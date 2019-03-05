@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:id="@+id/lf_Linear"
+        android:background="#CCA6A6A6"
+        >
+
+    </LinearLayout>
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="250dp"
+        android:layout_height="500dp"
+        android:layout_gravity="center"
+        android:id="@+id/telListReView">
+
+    </android.support.v7.widget.RecyclerView>
+
+</FrameLayout>
