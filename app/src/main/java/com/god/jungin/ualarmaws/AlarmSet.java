@@ -58,7 +58,7 @@ public class AlarmSet extends AppCompatActivity implements TelListFragment.OnCli
 
     ImageView set_img_date;
     ImageView set_img_time;
-
+    
     TelListFragment telListFragment;
     FragmentManager fragmentManager;
     FragmentTransaction fragmentTransaction;
@@ -213,6 +213,7 @@ public class AlarmSet extends AppCompatActivity implements TelListFragment.OnCli
                             //서버에 값을 보냄
                             SendAlarm conn = new SendAlarm(getApplicationContext(),str_from,edit_msg.getText().toString(),str_date + str_time,tv_to.getText().toString(),0);
                             conn.execute("http://ec2-13-125-104-87.ap-northeast-2.compute.amazonaws.com:9000/reciveAlarm");
+
 
                         } else{
                             Toast.makeText(AlarmSet.this,"입력 값 확인 해주세요",Toast.LENGTH_SHORT).show();
